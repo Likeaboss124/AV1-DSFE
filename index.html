@@ -8,8 +8,29 @@
 			* {
 				background-color: rgb(255, 243, 74);
 			}
+
+			@keyframes neonGlow {
+				0% {
+					text-shadow: 0 0 5px limegreen, 0 0 10px limegreen,
+						0 0 20px limegreen, 0 0 40px yellow, 0 0 80px yellow;
+				}
+				50% {
+					text-shadow: 0 0 10px limegreen, 0 0 20px limegreen,
+						0 0 40px limegreen, 0 0 80px yellow, 0 0 160px yellow;
+				}
+				100% {
+					text-shadow: 0 0 5px limegreen, 0 0 10px limegreen,
+						0 0 20px limegreen, 0 0 40px yellow, 0 0 80px yellow;
+				}
+			}
+
 			h1 {
+				font-size: 50px;
+				color: yellow;
+				text-transform: uppercase;
 				text-align: center;
+				font-family: Arial, sans-serif;
+				animation: neonGlow 1.5s infinite alternate;
 			}
 			h2 {
 				text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -25,9 +46,6 @@
 				border-radius: 10px;
 				border: 5px solid rgb(89, 255, 39);
 				width: fit-content;
-			}
-			div {
-				display: flex;
 			}
 			li {
 				font-size: 20px;
@@ -73,7 +91,7 @@
 			eget. Suspendisse potenti.
 		</p>
 
-		<div>
+		<div style="display: flex">
 			<img
 				src="abacaxi.jfif"
 				alt=""
